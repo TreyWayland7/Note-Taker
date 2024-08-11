@@ -62,7 +62,7 @@ app.post('/api/notes', (req, res) => {
         }catch(error){
             return res.status(500).json({error: 'Failed to read data'});
         }
-        
+        newNote.id = "1"
 
         dbData.push(newNote);
         
